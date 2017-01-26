@@ -16,6 +16,11 @@
   <param name="use_pr2_controller_manager" value="$(arg use_pr2_controller_manager)" />
   
   <!-- load controller_list and controller_manager_ns -->
+  
+  <!-- **************************This is the default controller manager ******************
   <rosparam file="$(find pr2_moveit_config)/config/pr2_execution_controllers.yaml"/>
+  -->
+  <!-- Try loading the indigo2groovy configuration to interface with the pr2 -->
+  <rosparam file="$(find pr2_moveit_config)/config/i2g_pr2_execution_controllers.yaml"/>
 
 </launch>
